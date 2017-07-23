@@ -1,0 +1,20 @@
+{
+  "root": true, //  location of the es lint configuration file
+  "extends": [
+    "eslint:recommended", // presets  - airbnb/StandardJs
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 7, // version of JS script
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true, // running enviornment
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+      "no-console" : 1
+  }
+}
